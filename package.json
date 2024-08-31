@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/K-C-SANTU/shlud-learning-api#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "twilio": "^5.2.3"
   }
 }
