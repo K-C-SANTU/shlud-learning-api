@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-app.get("/", function (req, res) {
-	console.log("Request Received");
+app.get("/api/path", function (req, res) {
+	console.log("Request Accepted");
 	res.send("Hello World");
 });
 
