@@ -1,10 +1,15 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+require('dotenv').config()
+const sendSMS = require("./services/sms.service");
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+app.get("/api/path", function (req, res) {
+  sendSMS("hello santu", "+917026036446");
+  console.log("Request Accepted");
+  res.send("Hello World");
+});
 
-app.listen(3000, ()=>{
-    console.log("Server Started");
-})
+const port = process.env.PORT;
+app.listen(port, () => {
+  console.log(`Server Started: http://localhost:${port}`);
+});
