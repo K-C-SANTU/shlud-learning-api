@@ -6,5 +6,5 @@ app.get('/', function (req, res) {
 })
 
 app.listen(3000, ()=>{
-    console.log("Server Started");
+    console.log("Server Started: http://localhost:3000");
 })
